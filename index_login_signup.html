@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+    <style>
+        .success,
+        .error {
+            color: white;
+            padding: 7px;
+            margin-left: 250px;
+            width:60%;
+        }
+
+        .success {
+            background: green;
+        }
+
+        .error {
+            background: red;
+        }
+
+        #signin {
+            width: 20%;
+            background-color: lightgreen;
+            margin-bottom: 20px;
+             margin-left: 450px; 
+            
+        
+        }
+
+        #signup {
+            width: 20%;
+            background-color: lightcoral;
+            margin-left: 450px;
+          
+        }
+
+        #nsit {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 60%;
+            width: 150px;
+            height: 150px;
+            margin-left: 700px; 
+            
+        }
+
+        #uid,
+        #password,.lb{
+            width:60%;
+             margin-left: 250px; 
+           
+        }
+        #msg
+        {
+             margin-left: 300px; 
+            
+        }
+    </style>
+    <title>LOGIN/SIGNUP</title>
+</head>
+
+<body>
+    <img src="nsit.png" alt="nsit" id="nsit">
+    <div class="container">
+        <h3 class="lb">LOGIN FORM</h3>
+        <form id="signup_in">
+            <div>
+                <label class="lb" for="uid">ENTER USER EMAIL</label>
+                <input type="text" id="uid" class="u-full-width">
+            </div>
+            <div>
+                <label class="lb" for="password">ENTER PASSWORD</label>
+                <input type="text" id="password" class="u-full-width" value="">
+            </div>
+            <div>
+                <input type="submit" value="LOGIN" id="signin" value="">
+            </div>
+            <h5 class="lb" id="msg">NOT AN EXISTING USER, SIGN UP BELOW </h5>
+            <div>
+                <input type="submit" value="Signup" id="signup">
+            </div>
+        </form>
+    </div>
+
+    <script src="index_login_signup.js"></script>
+</body>
+
+</html>

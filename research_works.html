@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+    <style>
+        .success,
+        .error {
+            color: white;
+            padding: 5px;
+            margin: 5px 0 15px 0;
+        }
+
+        .success {
+            background: green;
+        }
+
+        .error {
+            background: red;
+        }
+
+        #research_field,
+        #project,
+        #link,
+        #org {
+            width: 40%;
+            /* background-color: greenyellow; */
+            margin-bottom: 10px;
+        }
+
+        #submit {
+            width: 20%;
+            background-color: limegreen;
+        }
+
+        #nsit {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .message {
+            color: blue;
+        }
+        #lb {margin-left: 250px;}
+    </style>
+    <title>REASERACH WORKS PAGE</title>
+</head>
+
+<body>
+    <!-- <img src="nsit.png" alt="nsit" id="nsit"> -->
+    <div class="container" id="lb">
+        <img src="nsit.png" alt="nsit" id="nsit">
+        <h3 class="message">ADD RESEARCHES HERE</h3>
+        <form id="research_form">
+            <div>
+                <label for="research_field">RESEARCH FIELD</label>
+                <input type="text" id="research_field">
+            </div>
+            <div>
+                <label for="project">PROJECT DESCRIPTION</label>
+                <input type="text" id="project">
+            </div>
+            <div>
+                <label for="link">PUBLICATION LINK</label>
+                <input type="text" id="link">
+            </div>
+            <div>
+                <label for="org">ORGANIZATIONS LINKED</label>
+                <input type="text" id="org">
+            </div>
+            <div>
+                <input type="submit" value="SUBMIT" id="submit">
+            </div>
+        </form>
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th>RESEARCH FIELD</th>
+                    <th>PROJECT DESCRIPTION</th>
+                    <th>PUBLICATION LINK</th>
+                    <th>ORGANIZATIONS LINKED</th>
+                </tr>
+            </thead>
+            <tbody id="research-list"></tbody>
+        </table>
+    </div>
+
+    <script src="research_works.js"></script>
+</body>
+
+</html>

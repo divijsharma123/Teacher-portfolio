@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+    <style>
+        .success,
+        .error {
+            color: white;
+            padding: 5px;
+            margin: 5px 0 15px 0;
+        }
+
+        .success {
+            background: green;
+        }
+
+        .error {
+            background: red;
+        }
+
+        #roll_no,
+        #Subject,
+        #Grade_attained,
+        #assignment {
+            width: 40%;
+            /* background-color: greenyellow; */
+            margin-bottom: 10px;
+        }
+
+        #submit {
+            width: 20%;
+            background-color: limegreen;
+        }
+
+        #nsit {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            width: 150px;
+            height: 150px;
+        }
+
+        .message {
+            color: blue;
+        }
+        #lb {margin-left: 250px;}
+    </style>
+    <title>STUDENT GRADES PAGE</title>
+</head>
+
+<body>
+    <!-- <img src="nsit.png" alt="nsit" id="nsit"> -->
+    <div class="container" id="lb">
+        <img src="nsit.png" alt="nsit" id="nsit">
+        <h3 class="message">ADD GRADES HERE</h3>
+        <form id="grade_form">
+            <div>
+                <label for="roll_no">ROLL NO.</label>
+                <input type="text" id="roll_no">
+            </div>
+            <div>
+                <label for="Subject">SUBJECT</label>
+                <input type="text" id="Subject">
+            </div>
+            <div>
+                <label for="Grade_attained">GRADE</label>
+                <input type="text" id="Grade_attained">
+            </div>
+            <div>
+                <label for="assignment">ASSIGNMENT</label>
+                <input type="text" id="assignment">
+            </div>
+            <div>
+                <input type="submit" value="SUBMIT" id="submit">
+            </div>
+        </form>
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th>ROLL NO</th>
+                    <th>SUBJECT</th>
+                    <th>GRADE</th>
+                    <th>ASSIGNMENT</th>
+                </tr>
+            </thead>
+            <tbody id="grade-list"></tbody>
+        </table>
+    </div>
+
+    <script src="student_grades.js"></script>
+</body>
+
+</html>
